@@ -1,5 +1,15 @@
 version: "3"
 services: 
+    grafana:
+        image: grafana/grafana
+        ports:
+        - "3000:3000"
+    prometheus:
+      image: prom/prometheus
+      volumes:
+      - "./prometheus.yml:/etc/prometheus/prometheus.yml"
+      ports:
+      - "9090:9090" 
     db:
       image: 1000kit/h2
       container_name: zeebe_db
@@ -7,7 +17,7 @@ services:
         - "1521:1521"
         - "8181:8181"
     monitor:
-      image: camunda/zeebe-simple-monitor
+      image: camunda/zeebe-simple-monitor:0.16.0
       environment:
         - spring.datasource.url=jdbc:h2:tcp://db:1521/zeebe-monitor;DB_CLOSE_DELAY=-1
         - io.zeebe.monitor.connectionString=broker-1:26500
@@ -23,6 +33,7 @@ services:
             - 26500:26500
             - 26501:26501
             - 5701:5701
+            - 9600:9600
         environment:
             - ZEEBE_LOG_LEVEL=${ZEEBE_LOG_LEVEL:-debug}
             - ZEEBE_NODE_ID=0
@@ -30,13 +41,14 @@ services:
             - ZEEBE_CLUSTER_SIZE=3
             - ZEEBE_REPLICATION_FACTOR=3
         volumes:
-            - ./zeebe-hazelcast-exporter-0.5.0.jar:/usr/local/zeebe/lib/zeebe-hazelcast-exporter.jar
+            - ./zeebe-hazelcast-exporter-0.6.0.jar:/usr/local/zeebe/lib/zeebe-hazelcast-exporter.jar
             - ./broker_1:/usr/local/zeebe/data
             - ./zeebe.cfg.toml:/usr/local/zeebe/conf/zeebe.cfg.toml
     broker-2:
         image: camunda/zeebe:${ZEEBE_VERSION:-latest}
         ports:
             - 26510:26500
+            - 9601:9600
         environment:
             - ZEEBE_LOG_LEVEL=${ZEEBE_LOG_LEVEL:-debug}
             - ZEEBE_NODE_ID=1
@@ -46,10 +58,12 @@ services:
             - ZEEBE_CONTACT_POINTS=broker-1:26502
         volumes:
             - ./broker_2:/usr/local/zeebe/data
+            - ./zeebe.cfg.toml:/usr/local/zeebe/conf/zeebe.cfg.toml
     broker-3:
         image: camunda/zeebe:${ZEEBE_VERSION:-latest}
         ports:
             - 26520:26500
+            - 9602:9600
         environment:
             - ZEEBE_LOG_LEVEL=${ZEEBE_LOG_LEVEL:-debug}
             - ZEEBE_NODE_ID=2
@@ -59,3 +73,5 @@ services:
             - ZEEBE_CONTACT_POINTS=broker-1:26502
         volumes:
             - ./broker_3:/usr/local/zeebe/data
+            - ./zeebe.cfg.toml:/usr/local/zeebe/conf/zeebe.cfg.toml
+

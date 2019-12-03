@@ -114,10 +114,10 @@
 
 [network.monitoringApi]
 # Overrides the host used for exposing monitoring information
-# host = "localhost"
+  host = "0.0.0.0"
 
 # Sets the port used for exposing monitoring information
-# port = 9600
+  port = 9600
 
 
 [data]
