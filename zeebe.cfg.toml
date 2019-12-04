@@ -267,52 +267,40 @@
 #
 # An example configuration for the elasticsearch exporter:
 #
-#[[exporters]]
-#id = "elasticsearch"
-#className = "io.zeebe.exporter.ElasticsearchExporter"
+[[exporters]]
+id = "elasticsearch"
+className = "io.zeebe.exporter.ElasticsearchExporter"
+  [exporters.args]
+  url = "http://elasticsearch:9200"
 #
-#  [exporters.args]
-#  url = "http://localhost:9200"
+  [exporters.args.bulk]
+  delay = 5
+  size = 1_000
 #
-#  [exporters.args.bulk]
-#  delay = 5
-#  size = 1_000
-#
-#  [exporters.args.authentication]
+  [exporters.args.authentication]
 #  username = elastic
 #  password = changeme
 #
-#  [exporters.args.index]
-#  prefix = "zeebe-record"
+  [exporters.args.index]
+  prefix = "zeebe-record"
 #  createTemplate = true
-#
-#  command = false
-#  event = true
-#  rejection = false
-#
-#  deployment = true
-#  error = true
-#  incident = true
-#  job = true
-#  jobBatch = false
-#  message = false
-#  messageSubscription = false
-#  variable = true
-#  variableDocument = false
-#  workflowInstance = true
-#  workflowInstanceCreation = false
-#  workflowInstanceSubscription = false
+  command = false
+  event = true
+  rejection = false
+  deployment = true
+  error = true
+  incident = true
+  job = true
+  jobBatch = false
+  message = false
+  messageSubscription = false
+  variable = true
+  variableDocument = false
+  workflowInstance = true
+  workflowInstanceCreation = false
+  workflowInstanceSubscription = false
 
-[[exporters]]
-id = "hazelcast"
-className = "io.zeebe.hazelcast.exporter.HazelcastExporter"
-
-  [exporters.args]
-  # comma separated list of io.zeebe.protocol.record.ValueType
-  enabledValueTypes = "JOB,WORKFLOW_INSTANCE,DEPLOYMENT,INCIDENT"
-  port = 5701
 
    # If true, the exporter update its position after publish the record to Hazelcast.
    # Otherwise, it never update its position. On broker start, it will always start from the begin of the log.
    # CAUTION! The broker can't delete data and may run out of disk space if set to false.
-  updatePosition = false

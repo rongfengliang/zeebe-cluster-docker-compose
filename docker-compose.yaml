@@ -1,32 +1,21 @@
 version: "3"
 services: 
+    operate:
+      image: camunda/operate:1.1.0
+      ports:
+      - "8080:8080"
+      volumes:
+      - "./application.yml:/usr/local/operate/config/application.yml"
     grafana:
-        image: grafana/grafana
-        ports:
-        - "3000:3000"
+      image: grafana/grafana
+      ports:
+      - "3000:3000"
     prometheus:
       image: prom/prometheus
       volumes:
       - "./prometheus.yml:/etc/prometheus/prometheus.yml"
       ports:
       - "9090:9090" 
-    db:
-      image: 1000kit/h2
-      container_name: zeebe_db
-      ports:
-        - "1521:1521"
-        - "8181:8181"
-    monitor:
-      image: camunda/zeebe-simple-monitor:0.16.0
-      environment:
-        - spring.datasource.url=jdbc:h2:tcp://db:1521/zeebe-monitor;DB_CLOSE_DELAY=-1
-        - io.zeebe.monitor.connectionString=broker-1:26500
-        - spring.datasource.user=sa
-        - spring.datasource.password=
-        - spring.jpa.hibernate.ddl-auto=create
-        - io.zeebe.monitor.hazelcast.connection=broker-1:5701
-      ports:
-      - "8080:8080"
     broker-1:
         image: camunda/zeebe:${ZEEBE_VERSION:-latest}
         ports:
@@ -41,7 +30,6 @@ services:
             - ZEEBE_CLUSTER_SIZE=3
             - ZEEBE_REPLICATION_FACTOR=3
         volumes:
-            - ./zeebe-hazelcast-exporter-0.6.0.jar:/usr/local/zeebe/lib/zeebe-hazelcast-exporter.jar
             - ./broker_1:/usr/local/zeebe/data
             - ./zeebe.cfg.toml:/usr/local/zeebe/conf/zeebe.cfg.toml
     broker-2:
@@ -74,4 +62,15 @@ services:
         volumes:
             - ./broker_3:/usr/local/zeebe/data
             - ./zeebe.cfg.toml:/usr/local/zeebe/conf/zeebe.cfg.toml
-
+    elasticsearch:
+        image: elasticsearch:6.7.1 
+        container_name: elasticsearch
+        environment:
+        - "discovery.type=single-node"
+        ulimits:
+            memlock:
+                soft: -1
+                hard: -1
+        ports:
+        - 9200:9200
+        - 9300:9300 # required for Performance Analyzer
