@@ -1,3 +1,5 @@
 broker_1
 broker_2
 broker_3
+worker/target
+worker/dependency-reduced-pom.xml
