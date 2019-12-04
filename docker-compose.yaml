@@ -1,21 +1,21 @@
 version: "3"
-services: 
+services:
     operate:
-      image: camunda/operate:1.1.0
-      ports:
-      - "8080:8080"
-      volumes:
-      - "./application.yml:/usr/local/operate/config/application.yml"
+        image: camunda/operate:1.1.0
+        ports:
+            - "8080:8080"
+        volumes:
+            - "./application.yml:/usr/local/operate/config/application.yml"
     grafana:
-      image: grafana/grafana
-      ports:
-      - "3000:3000"
+        image: grafana/grafana
+        ports:
+            - "3000:3000"
     prometheus:
-      image: prom/prometheus
-      volumes:
-      - "./prometheus.yml:/etc/prometheus/prometheus.yml"
-      ports:
-      - "9090:9090" 
+        image: prom/prometheus
+        volumes:
+            - "./prometheus.yml:/etc/prometheus/prometheus.yml"
+        ports:
+            - "9090:9090"
     broker-1:
         image: camunda/zeebe:${ZEEBE_VERSION:-latest}
         ports:
@@ -63,14 +63,14 @@ services:
             - ./broker_3:/usr/local/zeebe/data
             - ./zeebe.cfg.toml:/usr/local/zeebe/conf/zeebe.cfg.toml
     elasticsearch:
-        image: elasticsearch:6.7.1 
+        image: elasticsearch:6.7.1
         container_name: elasticsearch
         environment:
-        - "discovery.type=single-node"
+            - "discovery.type=single-node"
         ulimits:
             memlock:
                 soft: -1
                 hard: -1
         ports:
-        - 9200:9200
-        - 9300:9300 # required for Performance Analyzer
+            - 9200:9200
+            - 9300:9300 # required for Performance Analyzer
