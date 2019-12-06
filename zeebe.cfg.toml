@@ -69,7 +69,7 @@
 
 [gateway.monitoring]
 # Enables the metrics collection in the gateway
-# enabled = false
+enabled = true
 
 [network]
 
