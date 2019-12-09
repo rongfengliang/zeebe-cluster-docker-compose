@@ -4,7 +4,7 @@ scrape_configs:
     scrape_interval: 10s
     scrape_timeout: 10s
     static_configs:
-      - targets: ['broker-1:9600','broker-2:9600','broker-3:9600']
+      - targets: ['broker-1:9600','broker-2:9600','broker-3:9600','broker-4:9600']
   - job_name: es
     metrics_path: /metrics
     scrape_interval: 10s

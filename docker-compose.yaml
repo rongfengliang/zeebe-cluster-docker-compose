@@ -22,7 +22,7 @@ services:
        image: justwatch/elasticsearch_exporter:1.1.0
        command:
        - '--es.uri=http://elasticsearch:9200'
-       - '--es.all=true'
+       - '--es.all'
        ports: 
        - "9114:9114"
     prometheus:
@@ -80,16 +80,15 @@ services:
     broker-4:
         image: camunda/zeebe:${ZEEBE_VERSION:-latest}
         ports:
-            - 26500:26500
-            - 26501:26501
-            - 5701:5701
-            - 9600:9600
+            - 26530:26500
+            - 9603:9600
         environment:
             - ZEEBE_LOG_LEVEL=${ZEEBE_LOG_LEVEL:-debug}
-            - ZEEBE_NODE_ID=0
+            - ZEEBE_NODE_ID=3
             - ZEEBE_PARTITIONS_COUNT=48
             - ZEEBE_CLUSTER_SIZE=4
             - ZEEBE_REPLICATION_FACTOR=1
+            - ZEEBE_CONTACT_POINTS=broker-1:26502
         volumes:
             - ./broker_4:/usr/local/zeebe/data
             - ./zeebe.cfg.toml:/usr/local/zeebe/conf/zeebe.cfg.toml
