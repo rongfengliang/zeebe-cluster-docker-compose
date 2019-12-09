@@ -12,6 +12,12 @@ services:
         image: grafana/grafana
         ports:
             - "3000:3000"
+    nginx-grpc-lb:
+        image: openresty/openresty:alpine
+        volumes: 
+        - "./nginx.conf:/usr/local/openresty/nginx/conf/nginx.conf"
+        ports:
+        - "27500:26500"
     es-exporter:
        image: justwatch/elasticsearch_exporter:1.1.0
        command:

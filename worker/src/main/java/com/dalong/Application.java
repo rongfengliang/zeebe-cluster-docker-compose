@@ -6,7 +6,7 @@ public class Application {
 
     public static void main(String[] args) {
 
-        final String broker = "broker-1:26500";
+        final String broker = "nginx-grpc-lb:26500";
         final String bpmnProcessId = "demoProcess";
         ZeebeClient client = ZeebeClient.newClientBuilder()
                 .brokerContactPoint(broker)
