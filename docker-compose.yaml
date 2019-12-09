@@ -12,6 +12,13 @@ services:
         image: grafana/grafana
         ports:
             - "3000:3000"
+    es-exporter:
+       image: justwatch/elasticsearch_exporter:1.1.0
+       command:
+       - '--es.uri=http://elasticsearch:9200'
+       - '--es.all=true'
+       ports: 
+       - "9114:9114"
     prometheus:
         image: prom/prometheus
         volumes:

@@ -1,0 +1,855 @@
+# HELP zeebe_elasticsearch_exporter_bulk_size Exporter bulk size
+# TYPE zeebe_elasticsearch_exporter_bulk_size histogram
+zeebe_elasticsearch_exporter_bulk_size_bucket{partition="1",le="10.0",} 3.0
+zeebe_elasticsearch_exporter_bulk_size_bucket{partition="1",le="100.0",} 4.0
+zeebe_elasticsearch_exporter_bulk_size_bucket{partition="1",le="1000.0",} 63.0
+zeebe_elasticsearch_exporter_bulk_size_bucket{partition="1",le="10000.0",} 63.0
+zeebe_elasticsearch_exporter_bulk_size_bucket{partition="1",le="100000.0",} 63.0
+zeebe_elasticsearch_exporter_bulk_size_bucket{partition="1",le="+Inf",} 63.0
+zeebe_elasticsearch_exporter_bulk_size_count{partition="1",} 63.0
+zeebe_elasticsearch_exporter_bulk_size_sum{partition="1",} 18382.0
+zeebe_elasticsearch_exporter_bulk_size_bucket{partition="13",le="10.0",} 1.0
+zeebe_elasticsearch_exporter_bulk_size_bucket{partition="13",le="100.0",} 2.0
+zeebe_elasticsearch_exporter_bulk_size_bucket{partition="13",le="1000.0",} 62.0
+zeebe_elasticsearch_exporter_bulk_size_bucket{partition="13",le="10000.0",} 62.0
+zeebe_elasticsearch_exporter_bulk_size_bucket{partition="13",le="100000.0",} 62.0
+zeebe_elasticsearch_exporter_bulk_size_bucket{partition="13",le="+Inf",} 62.0
+zeebe_elasticsearch_exporter_bulk_size_count{partition="13",} 62.0
+zeebe_elasticsearch_exporter_bulk_size_sum{partition="13",} 18777.0
+zeebe_elasticsearch_exporter_bulk_size_bucket{partition="4",le="10.0",} 2.0
+zeebe_elasticsearch_exporter_bulk_size_bucket{partition="4",le="100.0",} 2.0
+zeebe_elasticsearch_exporter_bulk_size_bucket{partition="4",le="1000.0",} 63.0
+zeebe_elasticsearch_exporter_bulk_size_bucket{partition="4",le="10000.0",} 63.0
+zeebe_elasticsearch_exporter_bulk_size_bucket{partition="4",le="100000.0",} 63.0
+zeebe_elasticsearch_exporter_bulk_size_bucket{partition="4",le="+Inf",} 63.0
+zeebe_elasticsearch_exporter_bulk_size_count{partition="4",} 63.0
+zeebe_elasticsearch_exporter_bulk_size_sum{partition="4",} 18828.0
+zeebe_elasticsearch_exporter_bulk_size_bucket{partition="16",le="10.0",} 1.0
+zeebe_elasticsearch_exporter_bulk_size_bucket{partition="16",le="100.0",} 2.0
+zeebe_elasticsearch_exporter_bulk_size_bucket{partition="16",le="1000.0",} 62.0
+zeebe_elasticsearch_exporter_bulk_size_bucket{partition="16",le="10000.0",} 62.0
+zeebe_elasticsearch_exporter_bulk_size_bucket{partition="16",le="100000.0",} 62.0
+zeebe_elasticsearch_exporter_bulk_size_bucket{partition="16",le="+Inf",} 62.0
+zeebe_elasticsearch_exporter_bulk_size_count{partition="16",} 62.0
+zeebe_elasticsearch_exporter_bulk_size_sum{partition="16",} 18801.0
+zeebe_elasticsearch_exporter_bulk_size_bucket{partition="7",le="10.0",} 1.0
+zeebe_elasticsearch_exporter_bulk_size_bucket{partition="7",le="100.0",} 2.0
+zeebe_elasticsearch_exporter_bulk_size_bucket{partition="7",le="1000.0",} 62.0
+zeebe_elasticsearch_exporter_bulk_size_bucket{partition="7",le="10000.0",} 62.0
+zeebe_elasticsearch_exporter_bulk_size_bucket{partition="7",le="100000.0",} 62.0
+zeebe_elasticsearch_exporter_bulk_size_bucket{partition="7",le="+Inf",} 62.0
+zeebe_elasticsearch_exporter_bulk_size_count{partition="7",} 62.0
+zeebe_elasticsearch_exporter_bulk_size_sum{partition="7",} 18846.0
+zeebe_elasticsearch_exporter_bulk_size_bucket{partition="19",le="10.0",} 1.0
+zeebe_elasticsearch_exporter_bulk_size_bucket{partition="19",le="100.0",} 2.0
+zeebe_elasticsearch_exporter_bulk_size_bucket{partition="19",le="1000.0",} 62.0
+zeebe_elasticsearch_exporter_bulk_size_bucket{partition="19",le="10000.0",} 62.0
+zeebe_elasticsearch_exporter_bulk_size_bucket{partition="19",le="100000.0",} 62.0
+zeebe_elasticsearch_exporter_bulk_size_bucket{partition="19",le="+Inf",} 62.0
+zeebe_elasticsearch_exporter_bulk_size_count{partition="19",} 62.0
+zeebe_elasticsearch_exporter_bulk_size_sum{partition="19",} 18693.0
+zeebe_elasticsearch_exporter_bulk_size_bucket{partition="10",le="10.0",} 1.0
+zeebe_elasticsearch_exporter_bulk_size_bucket{partition="10",le="100.0",} 2.0
+zeebe_elasticsearch_exporter_bulk_size_bucket{partition="10",le="1000.0",} 63.0
+zeebe_elasticsearch_exporter_bulk_size_bucket{partition="10",le="10000.0",} 63.0
+zeebe_elasticsearch_exporter_bulk_size_bucket{partition="10",le="100000.0",} 63.0
+zeebe_elasticsearch_exporter_bulk_size_bucket{partition="10",le="+Inf",} 63.0
+zeebe_elasticsearch_exporter_bulk_size_count{partition="10",} 63.0
+zeebe_elasticsearch_exporter_bulk_size_sum{partition="10",} 18799.0
+zeebe_elasticsearch_exporter_bulk_size_bucket{partition="22",le="10.0",} 2.0
+zeebe_elasticsearch_exporter_bulk_size_bucket{partition="22",le="100.0",} 3.0
+zeebe_elasticsearch_exporter_bulk_size_bucket{partition="22",le="1000.0",} 62.0
+zeebe_elasticsearch_exporter_bulk_size_bucket{partition="22",le="10000.0",} 62.0
+zeebe_elasticsearch_exporter_bulk_size_bucket{partition="22",le="100000.0",} 62.0
+zeebe_elasticsearch_exporter_bulk_size_bucket{partition="22",le="+Inf",} 62.0
+zeebe_elasticsearch_exporter_bulk_size_count{partition="22",} 62.0
+zeebe_elasticsearch_exporter_bulk_size_sum{partition="22",} 18407.0
+# HELP zeebe_dropped_request_count_total Number of requests dropped due to backpressure
+# TYPE zeebe_dropped_request_count_total counter
+# HELP zeebe_backpressure_inflight_requests_count Current number of request inflight
+# TYPE zeebe_backpressure_inflight_requests_count gauge
+zeebe_backpressure_inflight_requests_count{partition="1",} 1.0
+zeebe_backpressure_inflight_requests_count{partition="13",} 1.0
+zeebe_backpressure_inflight_requests_count{partition="4",} 0.0
+zeebe_backpressure_inflight_requests_count{partition="16",} 0.0
+zeebe_backpressure_inflight_requests_count{partition="7",} 1.0
+zeebe_backpressure_inflight_requests_count{partition="19",} 1.0
+zeebe_backpressure_inflight_requests_count{partition="10",} 0.0
+zeebe_backpressure_inflight_requests_count{partition="22",} 1.0
+# HELP jvm_gc_collection_seconds Time spent in a given JVM garbage collector in seconds.
+# TYPE jvm_gc_collection_seconds summary
+jvm_gc_collection_seconds_count{gc="G1 Young Generation",} 84.0
+jvm_gc_collection_seconds_sum{gc="G1 Young Generation",} 2.59
+jvm_gc_collection_seconds_count{gc="G1 Old Generation",} 0.0
+jvm_gc_collection_seconds_sum{gc="G1 Old Generation",} 0.0
+# HELP grpc_server_handled_latency_seconds Histogram of response latency (seconds) of gRPC that had been application-level handled by the server.
+# TYPE grpc_server_handled_latency_seconds histogram
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="gateway_protocol.Gateway",grpc_method="DeployWorkflow",le="0.001",} 0.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="gateway_protocol.Gateway",grpc_method="DeployWorkflow",le="0.005",} 0.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="gateway_protocol.Gateway",grpc_method="DeployWorkflow",le="0.01",} 0.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="gateway_protocol.Gateway",grpc_method="DeployWorkflow",le="0.05",} 0.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="gateway_protocol.Gateway",grpc_method="DeployWorkflow",le="0.075",} 0.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="gateway_protocol.Gateway",grpc_method="DeployWorkflow",le="0.1",} 0.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="gateway_protocol.Gateway",grpc_method="DeployWorkflow",le="0.25",} 0.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="gateway_protocol.Gateway",grpc_method="DeployWorkflow",le="0.5",} 1.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="gateway_protocol.Gateway",grpc_method="DeployWorkflow",le="1.0",} 1.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="gateway_protocol.Gateway",grpc_method="DeployWorkflow",le="2.0",} 1.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="gateway_protocol.Gateway",grpc_method="DeployWorkflow",le="5.0",} 1.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="gateway_protocol.Gateway",grpc_method="DeployWorkflow",le="10.0",} 1.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="gateway_protocol.Gateway",grpc_method="DeployWorkflow",le="+Inf",} 1.0
+grpc_server_handled_latency_seconds_count{grpc_type="UNARY",grpc_service="gateway_protocol.Gateway",grpc_method="DeployWorkflow",} 1.0
+grpc_server_handled_latency_seconds_sum{grpc_type="UNARY",grpc_service="gateway_protocol.Gateway",grpc_method="DeployWorkflow",} 0.334
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="gateway_protocol.Gateway",grpc_method="CreateWorkflowInstance",le="0.001",} 0.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="gateway_protocol.Gateway",grpc_method="CreateWorkflowInstance",le="0.005",} 2910.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="gateway_protocol.Gateway",grpc_method="CreateWorkflowInstance",le="0.01",} 13663.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="gateway_protocol.Gateway",grpc_method="CreateWorkflowInstance",le="0.05",} 38276.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="gateway_protocol.Gateway",grpc_method="CreateWorkflowInstance",le="0.075",} 42653.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="gateway_protocol.Gateway",grpc_method="CreateWorkflowInstance",le="0.1",} 44222.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="gateway_protocol.Gateway",grpc_method="CreateWorkflowInstance",le="0.25",} 45264.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="gateway_protocol.Gateway",grpc_method="CreateWorkflowInstance",le="0.5",} 45278.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="gateway_protocol.Gateway",grpc_method="CreateWorkflowInstance",le="1.0",} 45278.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="gateway_protocol.Gateway",grpc_method="CreateWorkflowInstance",le="2.0",} 45278.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="gateway_protocol.Gateway",grpc_method="CreateWorkflowInstance",le="5.0",} 45278.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="gateway_protocol.Gateway",grpc_method="CreateWorkflowInstance",le="10.0",} 45278.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="gateway_protocol.Gateway",grpc_method="CreateWorkflowInstance",le="+Inf",} 45278.0
+grpc_server_handled_latency_seconds_count{grpc_type="UNARY",grpc_service="gateway_protocol.Gateway",grpc_method="CreateWorkflowInstance",} 45278.0
+grpc_server_handled_latency_seconds_sum{grpc_type="UNARY",grpc_service="gateway_protocol.Gateway",grpc_method="CreateWorkflowInstance",} 1286.4989999999752
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="gateway_protocol.Gateway",grpc_method="Topology",le="0.001",} 0.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="gateway_protocol.Gateway",grpc_method="Topology",le="0.005",} 0.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="gateway_protocol.Gateway",grpc_method="Topology",le="0.01",} 0.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="gateway_protocol.Gateway",grpc_method="Topology",le="0.05",} 2.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="gateway_protocol.Gateway",grpc_method="Topology",le="0.075",} 2.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="gateway_protocol.Gateway",grpc_method="Topology",le="0.1",} 2.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="gateway_protocol.Gateway",grpc_method="Topology",le="0.25",} 2.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="gateway_protocol.Gateway",grpc_method="Topology",le="0.5",} 2.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="gateway_protocol.Gateway",grpc_method="Topology",le="1.0",} 2.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="gateway_protocol.Gateway",grpc_method="Topology",le="2.0",} 2.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="gateway_protocol.Gateway",grpc_method="Topology",le="5.0",} 2.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="gateway_protocol.Gateway",grpc_method="Topology",le="10.0",} 2.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="gateway_protocol.Gateway",grpc_method="Topology",le="+Inf",} 2.0
+grpc_server_handled_latency_seconds_count{grpc_type="UNARY",grpc_service="gateway_protocol.Gateway",grpc_method="Topology",} 2.0
+grpc_server_handled_latency_seconds_sum{grpc_type="UNARY",grpc_service="gateway_protocol.Gateway",grpc_method="Topology",} 0.058
+# HELP zeebe_pending_incidents_total Number of pending incidents
+# TYPE zeebe_pending_incidents_total gauge
+# HELP zeebe_pending_jobs_total Number of pending jobs
+# TYPE zeebe_pending_jobs_total gauge
+zeebe_pending_jobs_total{partition="16",type="foo",} 1884.0
+zeebe_pending_jobs_total{partition="7",type="foo",} 1884.0
+zeebe_pending_jobs_total{partition="4",type="foo",} 1883.0
+zeebe_pending_jobs_total{partition="22",type="foo",} 1883.0
+zeebe_pending_jobs_total{partition="1",type="foo",} 1883.0
+zeebe_pending_jobs_total{partition="13",type="foo",} 1885.0
+zeebe_pending_jobs_total{partition="10",type="foo",} 1885.0
+zeebe_pending_jobs_total{partition="19",type="foo",} 1884.0
+# HELP zeebe_elasticsearch_exporter_flush_duration_seconds Flush duration of bulk exporters in seconds
+# TYPE zeebe_elasticsearch_exporter_flush_duration_seconds histogram
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="1",le="0.005",} 0.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="1",le="0.01",} 2.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="1",le="0.025",} 12.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="1",le="0.05",} 31.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="1",le="0.075",} 39.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="1",le="0.1",} 45.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="1",le="0.25",} 60.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="1",le="0.5",} 63.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="1",le="0.75",} 63.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="1",le="1.0",} 63.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="1",le="2.5",} 63.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="1",le="5.0",} 63.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="1",le="7.5",} 63.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="1",le="10.0",} 63.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="1",le="+Inf",} 63.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_count{partition="1",} 63.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_sum{partition="1",} 5.383120080000002
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="13",le="0.005",} 0.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="13",le="0.01",} 1.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="13",le="0.025",} 17.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="13",le="0.05",} 31.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="13",le="0.075",} 41.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="13",le="0.1",} 49.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="13",le="0.25",} 59.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="13",le="0.5",} 61.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="13",le="0.75",} 62.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="13",le="1.0",} 62.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="13",le="2.5",} 62.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="13",le="5.0",} 62.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="13",le="7.5",} 62.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="13",le="10.0",} 62.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="13",le="+Inf",} 62.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_count{partition="13",} 62.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_sum{partition="13",} 4.938559768000002
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="4",le="0.005",} 0.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="4",le="0.01",} 1.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="4",le="0.025",} 16.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="4",le="0.05",} 37.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="4",le="0.075",} 40.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="4",le="0.1",} 48.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="4",le="0.25",} 61.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="4",le="0.5",} 63.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="4",le="0.75",} 63.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="4",le="1.0",} 63.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="4",le="2.5",} 63.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="4",le="5.0",} 63.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="4",le="7.5",} 63.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="4",le="10.0",} 63.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="4",le="+Inf",} 63.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_count{partition="4",} 63.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_sum{partition="4",} 4.527857321999999
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="16",le="0.005",} 0.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="16",le="0.01",} 0.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="16",le="0.025",} 17.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="16",le="0.05",} 33.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="16",le="0.075",} 39.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="16",le="0.1",} 44.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="16",le="0.25",} 60.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="16",le="0.5",} 62.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="16",le="0.75",} 62.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="16",le="1.0",} 62.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="16",le="2.5",} 62.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="16",le="5.0",} 62.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="16",le="7.5",} 62.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="16",le="10.0",} 62.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="16",le="+Inf",} 62.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_count{partition="16",} 62.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_sum{partition="16",} 4.995406553
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="7",le="0.005",} 0.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="7",le="0.01",} 1.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="7",le="0.025",} 12.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="7",le="0.05",} 29.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="7",le="0.075",} 38.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="7",le="0.1",} 43.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="7",le="0.25",} 57.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="7",le="0.5",} 61.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="7",le="0.75",} 61.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="7",le="1.0",} 61.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="7",le="2.5",} 61.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="7",le="5.0",} 61.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="7",le="7.5",} 61.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="7",le="10.0",} 61.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="7",le="+Inf",} 61.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_count{partition="7",} 61.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_sum{partition="7",} 5.184825054
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="19",le="0.005",} 0.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="19",le="0.01",} 0.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="19",le="0.025",} 13.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="19",le="0.05",} 29.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="19",le="0.075",} 45.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="19",le="0.1",} 48.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="19",le="0.25",} 60.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="19",le="0.5",} 62.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="19",le="0.75",} 62.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="19",le="1.0",} 62.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="19",le="2.5",} 62.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="19",le="5.0",} 62.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="19",le="7.5",} 62.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="19",le="10.0",} 62.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="19",le="+Inf",} 62.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_count{partition="19",} 62.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_sum{partition="19",} 4.589261203999999
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="10",le="0.005",} 0.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="10",le="0.01",} 1.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="10",le="0.025",} 21.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="10",le="0.05",} 38.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="10",le="0.075",} 40.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="10",le="0.1",} 44.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="10",le="0.25",} 60.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="10",le="0.5",} 63.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="10",le="0.75",} 63.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="10",le="1.0",} 63.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="10",le="2.5",} 63.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="10",le="5.0",} 63.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="10",le="7.5",} 63.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="10",le="10.0",} 63.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="10",le="+Inf",} 63.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_count{partition="10",} 63.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_sum{partition="10",} 4.942286018
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="22",le="0.005",} 0.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="22",le="0.01",} 1.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="22",le="0.025",} 11.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="22",le="0.05",} 28.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="22",le="0.075",} 42.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="22",le="0.1",} 50.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="22",le="0.25",} 60.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="22",le="0.5",} 62.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="22",le="0.75",} 62.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="22",le="1.0",} 62.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="22",le="2.5",} 62.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="22",le="5.0",} 62.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="22",le="7.5",} 62.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="22",le="10.0",} 62.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_bucket{partition="22",le="+Inf",} 62.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_count{partition="22",} 62.0
+zeebe_elasticsearch_exporter_flush_duration_seconds_sum{partition="22",} 4.737584986
+# HELP zeebe_received_request_count_total Number of requests received
+# TYPE zeebe_received_request_count_total counter
+zeebe_received_request_count_total{partition="1",} 1888.0
+zeebe_received_request_count_total{partition="13",} 1887.0
+zeebe_received_request_count_total{partition="4",} 1887.0
+zeebe_received_request_count_total{partition="16",} 1887.0
+zeebe_received_request_count_total{partition="7",} 1887.0
+zeebe_received_request_count_total{partition="19",} 1887.0
+zeebe_received_request_count_total{partition="10",} 1886.0
+zeebe_received_request_count_total{partition="22",} 1887.0
+# HELP grpc_server_msg_received_total Total number of stream messages received from the client.
+# TYPE grpc_server_msg_received_total counter
+# HELP zeebe_job_events_total Number of job events
+# TYPE zeebe_job_events_total counter
+zeebe_job_events_total{action="created",partition="1",type="foo",} 1883.0
+zeebe_job_events_total{action="created",partition="22",type="foo",} 1883.0
+zeebe_job_events_total{action="created",partition="10",type="foo",} 1885.0
+zeebe_job_events_total{action="created",partition="16",type="foo",} 1884.0
+zeebe_job_events_total{action="created",partition="4",type="foo",} 1883.0
+zeebe_job_events_total{action="created",partition="13",type="foo",} 1885.0
+zeebe_job_events_total{action="created",partition="19",type="foo",} 1884.0
+zeebe_job_events_total{action="created",partition="7",type="foo",} 1884.0
+# HELP zeebe_element_instance_events_total Number of workflow element instance events
+# TYPE zeebe_element_instance_events_total counter
+zeebe_element_instance_events_total{action="activated",type="SERVICE_TASK",partition="19",} 1884.0
+zeebe_element_instance_events_total{action="activated",type="PROCESS",partition="10",} 1886.0
+zeebe_element_instance_events_total{action="activated",type="START_EVENT",partition="4",} 1886.0
+zeebe_element_instance_events_total{action="activated",type="START_EVENT",partition="1",} 1886.0
+zeebe_element_instance_events_total{action="activated",type="PROCESS",partition="13",} 1886.0
+zeebe_element_instance_events_total{action="activated",type="PROCESS",partition="16",} 1886.0
+zeebe_element_instance_events_total{action="activated",type="PROCESS",partition="19",} 1886.0
+zeebe_element_instance_events_total{action="activated",type="SERVICE_TASK",partition="10",} 1885.0
+zeebe_element_instance_events_total{action="activated",type="SERVICE_TASK",partition="13",} 1885.0
+zeebe_element_instance_events_total{action="activated",type="START_EVENT",partition="7",} 1885.0
+zeebe_element_instance_events_total{action="activated",type="SERVICE_TASK",partition="16",} 1884.0
+zeebe_element_instance_events_total{action="activated",type="SERVICE_TASK",partition="7",} 1884.0
+zeebe_element_instance_events_total{action="activated",type="PROCESS",partition="1",} 1886.0
+zeebe_element_instance_events_total{action="completed",type="START_EVENT",partition="22",} 1885.0
+zeebe_element_instance_events_total{action="activated",type="PROCESS",partition="4",} 1886.0
+zeebe_element_instance_events_total{action="activated",type="START_EVENT",partition="22",} 1886.0
+zeebe_element_instance_events_total{action="activated",type="PROCESS",partition="7",} 1886.0
+zeebe_element_instance_events_total{action="activated",type="SERVICE_TASK",partition="1",} 1884.0
+zeebe_element_instance_events_total{action="completed",type="START_EVENT",partition="7",} 1885.0
+zeebe_element_instance_events_total{action="activated",type="SERVICE_TASK",partition="4",} 1884.0
+zeebe_element_instance_events_total{action="completed",type="START_EVENT",partition="4",} 1885.0
+zeebe_element_instance_events_total{action="completed",type="START_EVENT",partition="1",} 1885.0
+zeebe_element_instance_events_total{action="activated",type="PROCESS",partition="22",} 1886.0
+zeebe_element_instance_events_total{action="activated",type="SERVICE_TASK",partition="22",} 1884.0
+zeebe_element_instance_events_total{action="completed",type="START_EVENT",partition="19",} 1885.0
+zeebe_element_instance_events_total{action="completed",type="START_EVENT",partition="16",} 1885.0
+zeebe_element_instance_events_total{action="completed",type="START_EVENT",partition="13",} 1885.0
+zeebe_element_instance_events_total{action="activated",type="START_EVENT",partition="13",} 1886.0
+zeebe_element_instance_events_total{action="completed",type="START_EVENT",partition="10",} 1885.0
+zeebe_element_instance_events_total{action="activated",type="START_EVENT",partition="10",} 1886.0
+zeebe_element_instance_events_total{action="activated",type="START_EVENT",partition="19",} 1885.0
+zeebe_element_instance_events_total{action="activated",type="START_EVENT",partition="16",} 1885.0
+# HELP zeebe_stream_processor_latency Latency of processing in seconds
+# TYPE zeebe_stream_processor_latency histogram
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="4",le="0.005",} 2762.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="4",le="0.01",} 7614.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="4",le="0.025",} 13190.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="4",le="0.05",} 16937.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="4",le="0.075",} 18233.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="4",le="0.1",} 18619.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="4",le="0.25",} 18843.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="4",le="0.5",} 18847.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="4",le="0.75",} 18847.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="4",le="1.0",} 18847.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="4",le="2.5",} 18847.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="4",le="5.0",} 18847.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="4",le="7.5",} 18847.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="4",le="10.0",} 18847.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="4",le="+Inf",} 18847.0
+zeebe_stream_processor_latency_count{recordType="EVENT",partition="4",} 18847.0
+zeebe_stream_processor_latency_sum{recordType="EVENT",partition="4",} 409.73400151287206
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="1",le="0.005",} 2872.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="1",le="0.01",} 7721.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="1",le="0.025",} 13199.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="1",le="0.05",} 17009.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="1",le="0.075",} 18290.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="1",le="0.1",} 18641.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="1",le="0.25",} 18849.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="1",le="0.5",} 18850.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="1",le="0.75",} 18850.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="1",le="1.0",} 18850.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="1",le="2.5",} 18850.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="1",le="5.0",} 18850.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="1",le="7.5",} 18850.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="1",le="10.0",} 18850.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="1",le="+Inf",} 18850.0
+zeebe_stream_processor_latency_count{recordType="EVENT",partition="1",} 18850.0
+zeebe_stream_processor_latency_sum{recordType="EVENT",partition="1",} 402.73800160503015
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="19",le="0.005",} 531.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="19",le="0.01",} 1487.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="19",le="0.025",} 2563.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="19",le="0.05",} 3362.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="19",le="0.075",} 3652.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="19",le="0.1",} 3719.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="19",le="0.25",} 3771.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="19",le="0.5",} 3771.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="19",le="0.75",} 3771.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="19",le="1.0",} 3771.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="19",le="2.5",} 3771.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="19",le="5.0",} 3771.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="19",le="7.5",} 3771.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="19",le="10.0",} 3771.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="19",le="+Inf",} 3771.0
+zeebe_stream_processor_latency_count{recordType="COMMAND",partition="19",} 3771.0
+zeebe_stream_processor_latency_sum{recordType="COMMAND",partition="19",} 84.85000031557865
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="13",le="0.005",} 552.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="13",le="0.01",} 1499.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="13",le="0.025",} 2588.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="13",le="0.05",} 3370.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="13",le="0.075",} 3621.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="13",le="0.1",} 3717.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="13",le="0.25",} 3772.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="13",le="0.5",} 3772.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="13",le="0.75",} 3772.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="13",le="1.0",} 3772.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="13",le="2.5",} 3772.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="13",le="5.0",} 3772.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="13",le="7.5",} 3772.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="13",le="10.0",} 3772.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="13",le="+Inf",} 3772.0
+zeebe_stream_processor_latency_count{recordType="COMMAND",partition="13",} 3772.0
+zeebe_stream_processor_latency_sum{recordType="COMMAND",partition="13",} 84.98400034592487
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="7",le="0.005",} 2714.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="7",le="0.01",} 7608.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="7",le="0.025",} 13245.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="7",le="0.05",} 17188.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="7",le="0.075",} 18329.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="7",le="0.1",} 18649.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="7",le="0.25",} 18845.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="7",le="0.5",} 18848.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="7",le="0.75",} 18848.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="7",le="1.0",} 18848.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="7",le="2.5",} 18848.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="7",le="5.0",} 18848.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="7",le="7.5",} 18848.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="7",le="10.0",} 18848.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="7",le="+Inf",} 18848.0
+zeebe_stream_processor_latency_count{recordType="EVENT",partition="7",} 18848.0
+zeebe_stream_processor_latency_sum{recordType="EVENT",partition="7",} 397.8030015048571
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="16",le="0.005",} 646.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="16",le="0.01",} 1493.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="16",le="0.025",} 2521.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="16",le="0.05",} 3395.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="16",le="0.075",} 3631.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="16",le="0.1",} 3707.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="16",le="0.25",} 3772.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="16",le="0.5",} 3772.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="16",le="0.75",} 3772.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="16",le="1.0",} 3772.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="16",le="2.5",} 3772.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="16",le="5.0",} 3772.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="16",le="7.5",} 3772.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="16",le="10.0",} 3772.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="16",le="+Inf",} 3772.0
+zeebe_stream_processor_latency_count{recordType="COMMAND",partition="16",} 3772.0
+zeebe_stream_processor_latency_sum{recordType="COMMAND",partition="16",} 85.59000028739683
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="10",le="0.005",} 621.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="10",le="0.01",} 1542.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="10",le="0.025",} 2572.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="10",le="0.05",} 3372.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="10",le="0.075",} 3647.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="10",le="0.1",} 3736.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="10",le="0.25",} 3772.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="10",le="0.5",} 3772.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="10",le="0.75",} 3772.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="10",le="1.0",} 3772.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="10",le="2.5",} 3772.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="10",le="5.0",} 3772.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="10",le="7.5",} 3772.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="10",le="10.0",} 3772.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="10",le="+Inf",} 3772.0
+zeebe_stream_processor_latency_count{recordType="COMMAND",partition="10",} 3772.0
+zeebe_stream_processor_latency_sum{recordType="COMMAND",partition="10",} 83.28600030811504
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="22",le="0.005",} 549.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="22",le="0.01",} 1463.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="22",le="0.025",} 2551.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="22",le="0.05",} 3381.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="22",le="0.075",} 3650.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="22",le="0.1",} 3727.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="22",le="0.25",} 3769.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="22",le="0.5",} 3770.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="22",le="0.75",} 3770.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="22",le="1.0",} 3770.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="22",le="2.5",} 3770.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="22",le="5.0",} 3770.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="22",le="7.5",} 3770.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="22",le="10.0",} 3770.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="22",le="+Inf",} 3770.0
+zeebe_stream_processor_latency_count{recordType="COMMAND",partition="22",} 3770.0
+zeebe_stream_processor_latency_sum{recordType="COMMAND",partition="22",} 84.39300025580451
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="4",le="0.005",} 551.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="4",le="0.01",} 1493.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="4",le="0.025",} 2520.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="4",le="0.05",} 3343.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="4",le="0.075",} 3639.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="4",le="0.1",} 3721.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="4",le="0.25",} 3770.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="4",le="0.5",} 3771.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="4",le="0.75",} 3771.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="4",le="1.0",} 3771.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="4",le="2.5",} 3771.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="4",le="5.0",} 3771.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="4",le="7.5",} 3771.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="4",le="10.0",} 3771.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="4",le="+Inf",} 3771.0
+zeebe_stream_processor_latency_count{recordType="COMMAND",partition="4",} 3771.0
+zeebe_stream_processor_latency_sum{recordType="COMMAND",partition="4",} 86.63400017144158
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="13",le="0.005",} 2809.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="13",le="0.01",} 7391.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="13",le="0.025",} 13247.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="13",le="0.05",} 17101.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="13",le="0.075",} 18277.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="13",le="0.1",} 18599.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="13",le="0.25",} 18854.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="13",le="0.5",} 18855.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="13",le="0.75",} 18855.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="13",le="1.0",} 18855.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="13",le="2.5",} 18855.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="13",le="5.0",} 18855.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="13",le="7.5",} 18855.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="13",le="10.0",} 18855.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="13",le="+Inf",} 18855.0
+zeebe_stream_processor_latency_count{recordType="EVENT",partition="13",} 18855.0
+zeebe_stream_processor_latency_sum{recordType="EVENT",partition="13",} 406.2590014212765
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="19",le="0.005",} 2826.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="19",le="0.01",} 7763.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="19",le="0.025",} 13235.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="19",le="0.05",} 17094.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="19",le="0.075",} 18270.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="19",le="0.1",} 18668.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="19",le="0.25",} 18849.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="19",le="0.5",} 18849.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="19",le="0.75",} 18849.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="19",le="1.0",} 18849.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="19",le="2.5",} 18849.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="19",le="5.0",} 18849.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="19",le="7.5",} 18849.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="19",le="10.0",} 18849.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="19",le="+Inf",} 18849.0
+zeebe_stream_processor_latency_count{recordType="EVENT",partition="19",} 18849.0
+zeebe_stream_processor_latency_sum{recordType="EVENT",partition="19",} 398.43800140474923
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="7",le="0.005",} 556.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="7",le="0.01",} 1555.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="7",le="0.025",} 2538.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="7",le="0.05",} 3379.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="7",le="0.075",} 3652.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="7",le="0.1",} 3730.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="7",le="0.25",} 3770.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="7",le="0.5",} 3771.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="7",le="0.75",} 3771.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="7",le="1.0",} 3771.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="7",le="2.5",} 3771.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="7",le="5.0",} 3771.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="7",le="7.5",} 3771.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="7",le="10.0",} 3771.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="7",le="+Inf",} 3771.0
+zeebe_stream_processor_latency_count{recordType="COMMAND",partition="7",} 3771.0
+zeebe_stream_processor_latency_sum{recordType="COMMAND",partition="7",} 83.0840003376361
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="16",le="0.005",} 2920.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="16",le="0.01",} 7640.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="16",le="0.025",} 13090.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="16",le="0.05",} 17131.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="16",le="0.075",} 18303.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="16",le="0.1",} 18631.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="16",le="0.25",} 18848.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="16",le="0.5",} 18848.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="16",le="0.75",} 18848.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="16",le="1.0",} 18848.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="16",le="2.5",} 18848.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="16",le="5.0",} 18848.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="16",le="7.5",} 18848.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="16",le="10.0",} 18848.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="16",le="+Inf",} 18848.0
+zeebe_stream_processor_latency_count{recordType="EVENT",partition="16",} 18848.0
+zeebe_stream_processor_latency_sum{recordType="EVENT",partition="16",} 401.8920013962779
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="1",le="0.005",} 576.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="1",le="0.01",} 1500.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="1",le="0.025",} 2556.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="1",le="0.05",} 3378.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="1",le="0.075",} 3661.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="1",le="0.1",} 3733.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="1",le="0.25",} 3772.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="1",le="0.5",} 3772.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="1",le="0.75",} 3772.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="1",le="1.0",} 3772.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="1",le="2.5",} 3772.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="1",le="5.0",} 3772.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="1",le="7.5",} 3772.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="1",le="10.0",} 3772.0
+zeebe_stream_processor_latency_bucket{recordType="COMMAND",partition="1",le="+Inf",} 3772.0
+zeebe_stream_processor_latency_count{recordType="COMMAND",partition="1",} 3772.0
+zeebe_stream_processor_latency_sum{recordType="COMMAND",partition="1",} 83.03000028524548
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="10",le="0.005",} 3092.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="10",le="0.01",} 7670.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="10",le="0.025",} 13268.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="10",le="0.05",} 17120.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="10",le="0.075",} 18277.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="10",le="0.1",} 18682.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="10",le="0.25",} 18850.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="10",le="0.5",} 18852.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="10",le="0.75",} 18852.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="10",le="1.0",} 18852.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="10",le="2.5",} 18853.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="10",le="5.0",} 18853.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="10",le="7.5",} 18853.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="10",le="10.0",} 18853.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="10",le="+Inf",} 18853.0
+zeebe_stream_processor_latency_count{recordType="EVENT",partition="10",} 18853.0
+zeebe_stream_processor_latency_sum{recordType="EVENT",partition="10",} 399.17700141179375
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="22",le="0.005",} 2818.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="22",le="0.01",} 7611.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="22",le="0.025",} 13331.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="22",le="0.05",} 17073.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="22",le="0.075",} 18206.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="22",le="0.1",} 18635.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="22",le="0.25",} 18844.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="22",le="0.5",} 18848.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="22",le="0.75",} 18848.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="22",le="1.0",} 18848.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="22",le="2.5",} 18848.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="22",le="5.0",} 18848.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="22",le="7.5",} 18848.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="22",le="10.0",} 18848.0
+zeebe_stream_processor_latency_bucket{recordType="EVENT",partition="22",le="+Inf",} 18848.0
+zeebe_stream_processor_latency_count{recordType="EVENT",partition="22",} 18848.0
+zeebe_stream_processor_latency_sum{recordType="EVENT",partition="22",} 403.3670016818214
+# HELP grpc_server_handled_total Total number of RPCs completed on the server, regardless of success or failure.
+# TYPE grpc_server_handled_total counter
+grpc_server_handled_total{grpc_type="UNARY",grpc_service="gateway_protocol.Gateway",grpc_method="CreateWorkflowInstance",code="OK",} 45279.0
+grpc_server_handled_total{grpc_type="UNARY",grpc_service="gateway_protocol.Gateway",grpc_method="Topology",code="OK",} 2.0
+grpc_server_handled_total{grpc_type="UNARY",grpc_service="gateway_protocol.Gateway",grpc_method="DeployWorkflow",code="OK",} 1.0
+# HELP jvm_info JVM version info
+# TYPE jvm_info gauge
+jvm_info{version="11.0.5+10",vendor="Oracle Corporation",runtime="OpenJDK Runtime Environment",} 1.0
+# HELP zeebe_stream_processor_events_total Number of events processed by stream processor
+# TYPE zeebe_stream_processor_events_total counter
+zeebe_stream_processor_events_total{action="processed",partition="7",} 22619.0
+zeebe_stream_processor_events_total{action="written",partition="1",} 22622.0
+zeebe_stream_processor_events_total{action="written",partition="4",} 22618.0
+zeebe_stream_processor_events_total{action="written",partition="19",} 22620.0
+zeebe_stream_processor_events_total{action="processed",partition="4",} 22618.0
+zeebe_stream_processor_events_total{action="processed",partition="1",} 22622.0
+zeebe_stream_processor_events_total{action="written",partition="10",} 22625.0
+zeebe_stream_processor_events_total{action="written",partition="13",} 22627.0
+zeebe_stream_processor_events_total{action="skipped",partition="19",} 1886.0
+zeebe_stream_processor_events_total{action="written",partition="16",} 22620.0
+zeebe_stream_processor_events_total{action="processed",partition="22",} 22618.0
+zeebe_stream_processor_events_total{action="skipped",partition="16",} 1886.0
+zeebe_stream_processor_events_total{action="skipped",partition="10",} 1886.0
+zeebe_stream_processor_events_total{action="skipped",partition="13",} 1886.0
+zeebe_stream_processor_events_total{action="skipped",partition="7",} 1886.0
+zeebe_stream_processor_events_total{action="skipped",partition="4",} 1886.0
+zeebe_stream_processor_events_total{action="skipped",partition="1",} 1887.0
+zeebe_stream_processor_events_total{action="processed",partition="19",} 22620.0
+zeebe_stream_processor_events_total{action="processed",partition="16",} 22620.0
+zeebe_stream_processor_events_total{action="written",partition="22",} 22618.0
+zeebe_stream_processor_events_total{action="processed",partition="10",} 22625.0
+zeebe_stream_processor_events_total{action="written",partition="7",} 22619.0
+zeebe_stream_processor_events_total{action="skipped",partition="22",} 1886.0
+zeebe_stream_processor_events_total{action="processed",partition="13",} 22627.0
+# HELP jvm_threads_current Current thread count of a JVM
+# TYPE jvm_threads_current gauge
+jvm_threads_current 178.0
+# HELP jvm_threads_daemon Daemon thread count of a JVM
+# TYPE jvm_threads_daemon gauge
+jvm_threads_daemon 25.0
+# HELP jvm_threads_peak Peak thread count of a JVM
+# TYPE jvm_threads_peak gauge
+jvm_threads_peak 178.0
+# HELP jvm_threads_started_total Started thread count of a JVM
+# TYPE jvm_threads_started_total counter
+jvm_threads_started_total 206.0
+# HELP jvm_threads_deadlocked Cycles of JVM-threads that are in deadlock waiting to acquire object monitors or ownable synchronizers
+# TYPE jvm_threads_deadlocked gauge
+jvm_threads_deadlocked 0.0
+# HELP jvm_threads_deadlocked_monitor Cycles of JVM-threads that are in deadlock waiting to acquire object monitors
+# TYPE jvm_threads_deadlocked_monitor gauge
+jvm_threads_deadlocked_monitor 0.0
+# HELP jvm_threads_state Current count of threads by state
+# TYPE jvm_threads_state gauge
+jvm_threads_state{state="TERMINATED",} 0.0
+jvm_threads_state{state="TIMED_WAITING",} 32.0
+jvm_threads_state{state="WAITING",} 42.0
+jvm_threads_state{state="BLOCKED",} 0.0
+jvm_threads_state{state="RUNNABLE",} 104.0
+jvm_threads_state{state="NEW",} 0.0
+# HELP zeebe_incident_events_total Number of incident events
+# TYPE zeebe_incident_events_total counter
+# HELP jvm_buffer_pool_used_bytes Used bytes of a given JVM buffer pool.
+# TYPE jvm_buffer_pool_used_bytes gauge
+jvm_buffer_pool_used_bytes{pool="mapped",} 32768.0
+jvm_buffer_pool_used_bytes{pool="direct",} 1.221114055E9
+# HELP jvm_buffer_pool_capacity_bytes Bytes capacity of a given JVM buffer pool.
+# TYPE jvm_buffer_pool_capacity_bytes gauge
+jvm_buffer_pool_capacity_bytes{pool="mapped",} 32768.0
+jvm_buffer_pool_capacity_bytes{pool="direct",} 1.221114054E9
+# HELP jvm_buffer_pool_used_buffers Used buffers of a given JVM buffer pool.
+# TYPE jvm_buffer_pool_used_buffers gauge
+jvm_buffer_pool_used_buffers{pool="mapped",} 8.0
+jvm_buffer_pool_used_buffers{pool="direct",} 232.0
+# HELP grpc_server_msg_sent_total Total number of stream messages sent by the server.
+# TYPE grpc_server_msg_sent_total counter
+# HELP jvm_memory_pool_allocated_bytes_total Total bytes allocated in a given JVM memory pool. Only updated after GC, not continuously.
+# TYPE jvm_memory_pool_allocated_bytes_total counter
+jvm_memory_pool_allocated_bytes_total{pool="CodeHeap 'profiled nmethods'",} 2.98752E7
+jvm_memory_pool_allocated_bytes_total{pool="G1 Old Gen",} 1.140988176E9
+jvm_memory_pool_allocated_bytes_total{pool="G1 Eden Space",} 1.2733906944E10
+jvm_memory_pool_allocated_bytes_total{pool="CodeHeap 'non-profiled nmethods'",} 1.2634368E7
+jvm_memory_pool_allocated_bytes_total{pool="G1 Survivor Space",} 7.5497472E7
+jvm_memory_pool_allocated_bytes_total{pool="Compressed Class Space",} 8483784.0
+jvm_memory_pool_allocated_bytes_total{pool="Metaspace",} 6.9958584E7
+jvm_memory_pool_allocated_bytes_total{pool="CodeHeap 'non-nmethods'",} 1453056.0
+# HELP zeebe_running_workflow_instances_total Number of running workflow instances
+# TYPE zeebe_running_workflow_instances_total gauge
+zeebe_running_workflow_instances_total{partition="1",} 1886.0
+zeebe_running_workflow_instances_total{partition="13",} 1886.0
+zeebe_running_workflow_instances_total{partition="4",} 1886.0
+zeebe_running_workflow_instances_total{partition="16",} 1886.0
+zeebe_running_workflow_instances_total{partition="7",} 1886.0
+zeebe_running_workflow_instances_total{partition="19",} 1886.0
+zeebe_running_workflow_instances_total{partition="10",} 1886.0
+zeebe_running_workflow_instances_total{partition="22",} 1886.0
+# HELP grpc_server_started_total Total number of RPCs started on the server.
+# TYPE grpc_server_started_total counter
+grpc_server_started_total{grpc_type="UNARY",grpc_service="gateway_protocol.Gateway",grpc_method="DeployWorkflow",} 1.0
+grpc_server_started_total{grpc_type="UNARY",grpc_service="gateway_protocol.Gateway",grpc_method="CreateWorkflowInstance",} 45287.0
+grpc_server_started_total{grpc_type="UNARY",grpc_service="gateway_protocol.Gateway",grpc_method="Topology",} 2.0
+# HELP jvm_memory_bytes_used Used bytes of a given JVM memory area.
+# TYPE jvm_memory_bytes_used gauge
+jvm_memory_bytes_used{area="heap",} 1.469663744E9
+jvm_memory_bytes_used{area="nonheap",} 1.2065268E8
+# HELP jvm_memory_bytes_committed Committed (bytes) of a given JVM memory area.
+# TYPE jvm_memory_bytes_committed gauge
+jvm_memory_bytes_committed{area="heap",} 1.807745024E9
+jvm_memory_bytes_committed{area="nonheap",} 1.25906944E8
+# HELP jvm_memory_bytes_max Max (bytes) of a given JVM memory area.
+# TYPE jvm_memory_bytes_max gauge
+jvm_memory_bytes_max{area="heap",} 2.4901582848E10
+jvm_memory_bytes_max{area="nonheap",} -1.0
+# HELP jvm_memory_bytes_init Initial bytes of a given JVM memory area.
+# TYPE jvm_memory_bytes_init gauge
+jvm_memory_bytes_init{area="heap",} 1.34217728E8
+jvm_memory_bytes_init{area="nonheap",} 7667712.0
+# HELP jvm_memory_pool_bytes_used Used bytes of a given JVM memory pool.
+# TYPE jvm_memory_pool_bytes_used gauge
+jvm_memory_pool_bytes_used{pool="CodeHeap 'non-nmethods'",} 1421184.0
+jvm_memory_pool_bytes_used{pool="Metaspace",} 6.9961512E7
+jvm_memory_pool_bytes_used{pool="CodeHeap 'profiled nmethods'",} 2.8262528E7
+jvm_memory_pool_bytes_used{pool="Compressed Class Space",} 8476000.0
+jvm_memory_pool_bytes_used{pool="G1 Eden Space",} 4.99122176E8
+jvm_memory_pool_bytes_used{pool="G1 Old Gen",} 9.6215296E8
+jvm_memory_pool_bytes_used{pool="G1 Survivor Space",} 8388608.0
+jvm_memory_pool_bytes_used{pool="CodeHeap 'non-profiled nmethods'",} 1.2531456E7
+# HELP jvm_memory_pool_bytes_committed Committed bytes of a given JVM memory pool.
+# TYPE jvm_memory_pool_bytes_committed gauge
+jvm_memory_pool_bytes_committed{pool="CodeHeap 'non-nmethods'",} 2555904.0
+jvm_memory_pool_bytes_committed{pool="Metaspace",} 7.2691712E7
+jvm_memory_pool_bytes_committed{pool="CodeHeap 'profiled nmethods'",} 2.850816E7
+jvm_memory_pool_bytes_committed{pool="Compressed Class Space",} 9568256.0
+jvm_memory_pool_bytes_committed{pool="G1 Eden Space",} 6.62700032E8
+jvm_memory_pool_bytes_committed{pool="G1 Old Gen",} 1.136656384E9
+jvm_memory_pool_bytes_committed{pool="G1 Survivor Space",} 8388608.0
+jvm_memory_pool_bytes_committed{pool="CodeHeap 'non-profiled nmethods'",} 1.2582912E7
+# HELP jvm_memory_pool_bytes_max Max bytes of a given JVM memory pool.
+# TYPE jvm_memory_pool_bytes_max gauge
+jvm_memory_pool_bytes_max{pool="CodeHeap 'non-nmethods'",} 5836800.0
+jvm_memory_pool_bytes_max{pool="Metaspace",} -1.0
+jvm_memory_pool_bytes_max{pool="CodeHeap 'profiled nmethods'",} 1.22908672E8
+jvm_memory_pool_bytes_max{pool="Compressed Class Space",} 1.073741824E9
+jvm_memory_pool_bytes_max{pool="G1 Eden Space",} -1.0
+jvm_memory_pool_bytes_max{pool="G1 Old Gen",} 2.4901582848E10
+jvm_memory_pool_bytes_max{pool="G1 Survivor Space",} -1.0
+jvm_memory_pool_bytes_max{pool="CodeHeap 'non-profiled nmethods'",} 1.22912768E8
+# HELP jvm_memory_pool_bytes_init Initial bytes of a given JVM memory pool.
+# TYPE jvm_memory_pool_bytes_init gauge
+jvm_memory_pool_bytes_init{pool="CodeHeap 'non-nmethods'",} 2555904.0
+jvm_memory_pool_bytes_init{pool="Metaspace",} 0.0
+jvm_memory_pool_bytes_init{pool="CodeHeap 'profiled nmethods'",} 2555904.0
+jvm_memory_pool_bytes_init{pool="Compressed Class Space",} 0.0
+jvm_memory_pool_bytes_init{pool="G1 Eden Space",} 2.9360128E7
+jvm_memory_pool_bytes_init{pool="G1 Old Gen",} 1.048576E8
+jvm_memory_pool_bytes_init{pool="G1 Survivor Space",} 0.0
+jvm_memory_pool_bytes_init{pool="CodeHeap 'non-profiled nmethods'",} 2555904.0
+# HELP zeebe_exporter_events_total Number of events processed by exporter
+# TYPE zeebe_exporter_events_total counter
+zeebe_exporter_events_total{action="skipped",partition="1",valueType="DEPLOYMENT",} 2.0
+zeebe_exporter_events_total{action="skipped",partition="16",valueType="DEPLOYMENT",} 1.0
+zeebe_exporter_events_total{action="exported",partition="4",valueType="DEPLOYMENT",} 1.0
+zeebe_exporter_events_total{action="exported",partition="19",valueType="DEPLOYMENT",} 1.0
+zeebe_exporter_events_total{action="exported",partition="7",valueType="WORKFLOW_INSTANCE",} 16961.0
+zeebe_exporter_events_total{action="exported",partition="16",valueType="JOB",} 1884.0
+zeebe_exporter_events_total{action="skipped",partition="13",valueType="JOB",} 1885.0
+zeebe_exporter_events_total{action="skipped",partition="13",valueType="WORKFLOW_INSTANCE_CREATION",} 3772.0
+zeebe_exporter_events_total{action="skipped",partition="7",valueType="JOB",} 1884.0
+zeebe_exporter_events_total{action="exported",partition="13",valueType="WORKFLOW_INSTANCE",} 16969.0
+zeebe_exporter_events_total{action="skipped",partition="1",valueType="WORKFLOW_INSTANCE_CREATION",} 3773.0
+zeebe_exporter_events_total{action="exported",partition="1",valueType="DEPLOYMENT",} 2.0
+zeebe_exporter_events_total{action="skipped",partition="22",valueType="JOB",} 1883.0
+zeebe_exporter_events_total{action="skipped",partition="10",valueType="JOB",} 1885.0
+zeebe_exporter_events_total{action="exported",partition="13",valueType="JOB",} 1885.0
+zeebe_exporter_events_total{action="skipped",partition="16",valueType="WORKFLOW_INSTANCE_CREATION",} 3773.0
+zeebe_exporter_events_total{action="exported",partition="16",valueType="DEPLOYMENT",} 1.0
+zeebe_exporter_events_total{action="exported",partition="16",valueType="WORKFLOW_INSTANCE",} 16963.0
+zeebe_exporter_events_total{action="exported",partition="7",valueType="JOB",} 1884.0
+zeebe_exporter_events_total{action="skipped",partition="7",valueType="DEPLOYMENT",} 1.0
+zeebe_exporter_events_total{action="skipped",partition="13",valueType="DEPLOYMENT",} 1.0
+zeebe_exporter_events_total{action="skipped",partition="4",valueType="JOB",} 1883.0
+zeebe_exporter_events_total{action="skipped",partition="19",valueType="JOB",} 1884.0
+zeebe_exporter_events_total{action="skipped",partition="4",valueType="WORKFLOW_INSTANCE_CREATION",} 3773.0
+zeebe_exporter_events_total{action="exported",partition="1",valueType="WORKFLOW_INSTANCE",} 16966.0
+zeebe_exporter_events_total{action="exported",partition="22",valueType="JOB",} 1883.0
+zeebe_exporter_events_total{action="exported",partition="13",valueType="DEPLOYMENT",} 1.0
+zeebe_exporter_events_total{action="exported",partition="10",valueType="JOB",} 1884.0
+zeebe_exporter_events_total{action="skipped",partition="19",valueType="WORKFLOW_INSTANCE_CREATION",} 3772.0
+zeebe_exporter_events_total{action="skipped",partition="1",valueType="JOB",} 1883.0
+zeebe_exporter_events_total{action="exported",partition="4",valueType="JOB",} 1883.0
+zeebe_exporter_events_total{action="skipped",partition="22",valueType="DEPLOYMENT",} 1.0
+zeebe_exporter_events_total{action="skipped",partition="10",valueType="DEPLOYMENT",} 1.0
+zeebe_exporter_events_total{action="skipped",partition="16",valueType="JOB",} 1884.0
+zeebe_exporter_events_total{action="skipped",partition="19",valueType="DEPLOYMENT",} 1.0
+zeebe_exporter_events_total{action="exported",partition="7",valueType="DEPLOYMENT",} 1.0
+zeebe_exporter_events_total{action="exported",partition="19",valueType="WORKFLOW_INSTANCE",} 16964.0
+zeebe_exporter_events_total{action="exported",partition="19",valueType="JOB",} 1884.0
+zeebe_exporter_events_total{action="skipped",partition="4",valueType="DEPLOYMENT",} 1.0
+zeebe_exporter_events_total{action="skipped",partition="7",valueType="WORKFLOW_INSTANCE_CREATION",} 3772.0
+zeebe_exporter_events_total{action="exported",partition="4",valueType="WORKFLOW_INSTANCE",} 16963.0
+zeebe_exporter_events_total{action="exported",partition="22",valueType="DEPLOYMENT",} 1.0
+zeebe_exporter_events_total{action="exported",partition="10",valueType="WORKFLOW_INSTANCE",} 16968.0
+zeebe_exporter_events_total{action="exported",partition="22",valueType="WORKFLOW_INSTANCE",} 16965.0
+zeebe_exporter_events_total{action="exported",partition="10",valueType="DEPLOYMENT",} 1.0
+zeebe_exporter_events_total{action="skipped",partition="22",valueType="WORKFLOW_INSTANCE_CREATION",} 3772.0
+zeebe_exporter_events_total{action="exported",partition="1",valueType="JOB",} 1883.0
+zeebe_exporter_events_total{action="skipped",partition="10",valueType="WORKFLOW_INSTANCE_CREATION",} 3772.0
+# HELP jvm_classes_loaded The number of classes that are currently loaded in the JVM
+# TYPE jvm_classes_loaded gauge
+jvm_classes_loaded 11837.0
+# HELP jvm_classes_loaded_total The total number of classes that have been loaded since the JVM has started execution
+# TYPE jvm_classes_loaded_total counter
+jvm_classes_loaded_total 11933.0
+# HELP jvm_classes_unloaded_total The total number of classes that have been unloaded since the JVM has started execution
+# TYPE jvm_classes_unloaded_total counter
+jvm_classes_unloaded_total 96.0
+# HELP process_cpu_seconds_total Total user and system CPU time spent in seconds.
+# TYPE process_cpu_seconds_total counter
+process_cpu_seconds_total 971.7
+# HELP process_start_time_seconds Start time of the process since unix epoch in seconds.
+# TYPE process_start_time_seconds gauge
+process_start_time_seconds 1.575854522047E9
+# HELP process_open_fds Number of open file descriptors.
+# TYPE process_open_fds gauge
+process_open_fds 1051.0
+# HELP process_max_fds Maximum number of open file descriptors.
+# TYPE process_max_fds gauge
+process_max_fds 1048576.0
+# HELP process_virtual_memory_bytes Virtual memory size in bytes.
+# TYPE process_virtual_memory_bytes gauge
+process_virtual_memory_bytes 3.6294057984E10
+# HELP process_resident_memory_bytes Resident memory size in bytes.
+# TYPE process_resident_memory_bytes gauge
+process_resident_memory_bytes 3.62911744E9
+# HELP zeebe_backpressure_requests_limit Current limit for number of inflight requests
+# TYPE zeebe_backpressure_requests_limit gauge
+zeebe_backpressure_requests_limit{partition="1",} 20.0
+zeebe_backpressure_requests_limit{partition="13",} 20.0
+zeebe_backpressure_requests_limit{partition="4",} 20.0
+zeebe_backpressure_requests_limit{partition="16",} 20.0
+zeebe_backpressure_requests_limit{partition="7",} 20.0
+zeebe_backpressure_requests_limit{partition="19",} 20.0
+zeebe_backpressure_requests_limit{partition="10",} 20.0
+zeebe_backpressure_requests_limit{partition="22",} 20.0
