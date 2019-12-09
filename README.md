@@ -13,17 +13,17 @@ docker-compose up -d
 
 * deploy 
 
-> use zbctl  for mac
+> use zbctl
 
 ```code
-./zbctl.darwin --insecure deploy flow.bpmn
+./zbctl --insecure deploy flow.bpmn
 ```
 
 * create instance
 
-> use zbctl  for mac
+> use zbctl
 
 ```code
-./zbctl.darwin --insecure create instance   demoProcess
+./zbctl --insecure create instance   demoProcess
 
 ```
